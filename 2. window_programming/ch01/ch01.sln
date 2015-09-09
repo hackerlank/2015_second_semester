@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloSDK", "HelloSDK\HelloSDK.vcxproj", "{EBF40030-F0A5-4C43-AFB0-3859C895370F}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelloMFC", "HelloMFC\HelloMFC.vcxproj", "{066AE133-EA38-407E-90ED-176C138BDA12}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EBF40030-F0A5-4C43-AFB0-3859C895370F}.Debug|Win32.ActiveCfg = Debug|Win32
+		{EBF40030-F0A5-4C43-AFB0-3859C895370F}.Debug|Win32.Build.0 = Debug|Win32
+		{EBF40030-F0A5-4C43-AFB0-3859C895370F}.Release|Win32.ActiveCfg = Release|Win32
+		{EBF40030-F0A5-4C43-AFB0-3859C895370F}.Release|Win32.Build.0 = Release|Win32
+		{066AE133-EA38-407E-90ED-176C138BDA12}.Debug|Win32.ActiveCfg = Debug|Win32
+		{066AE133-EA38-407E-90ED-176C138BDA12}.Debug|Win32.Build.0 = Debug|Win32
+		{066AE133-EA38-407E-90ED-176C138BDA12}.Release|Win32.ActiveCfg = Release|Win32
+		{066AE133-EA38-407E-90ED-176C138BDA12}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
