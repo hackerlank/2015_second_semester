@@ -1,0 +1,33 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: hash_linear_probing - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP68.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/hash_linear_probing.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"c:\documents\ds2004final\8.ÇØ½Ì\hash_linear_probing2\hash_linear_probing.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP68.tmp" 
+Creating temporary file "C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP69.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/hash_linear_probing.pdb" /debug /machine:I386 /out:"Debug/hash_linear_probing.exe" /pdbtype:sept 
+".\Debug\hash_linear_probing.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP69.tmp"
+<h3>Output Window</h3>
+Compiling...
+hash_linear_probing.c
+c:\documents\ds2004final\8.ÇØ½Ì\hash_linear_probing2\hash_linear_probing.c(55) : warning C4047: '=' : 'char ' differs in levels of indirection from 'void *'
+Linking...
+
+
+
+<h3>Results</h3>
+hash_linear_probing.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

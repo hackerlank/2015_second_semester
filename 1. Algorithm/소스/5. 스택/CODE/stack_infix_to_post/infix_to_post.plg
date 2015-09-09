@@ -1,0 +1,36 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: infix_to_post - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP2D1.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/infix_to_post.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ  /c 
+"C:\documents\ds2004van\5. 스택(O)\CODE\infix_to_post\infix_to_post.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP2D1.tmp" 
+Creating temporary file "C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP2D2.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib  kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/infix_to_post.pdb" /debug /machine:I386 /out:"Debug/infix_to_post.exe" /pdbtype:sept 
+".\Debug\infix_to_post.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\OWNER~1.YOU\LOCALS~1\Temp\RSP2D2.tmp"
+<h3>Output Window</h3>
+Compiling...
+infix_to_post.c
+C:\documents\ds2004van\5. 스택(O)\CODE\infix_to_post\infix_to_post.c(44) : warning C4013: 'exit' undefined; assuming extern returning int
+C:\documents\ds2004van\5. 스택(O)\CODE\infix_to_post\infix_to_post.c(47) : warning C4715: 'pop' : not all control paths return a value
+C:\documents\ds2004van\5. 스택(O)\CODE\infix_to_post\infix_to_post.c(56) : warning C4715: 'peek' : not all control paths return a value
+C:\documents\ds2004van\5. 스택(O)\CODE\infix_to_post\infix_to_post.c(117) : warning C4761: integral size mismatch in argument; conversion supplied
+Linking...
+
+
+
+<h3>Results</h3>
+infix_to_post.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>
