@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p01-DrawCircles", "p01-DrawCircles\p01-DrawCircles.vcxproj", "{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p03-DisableCloseButtons", "p03-DisableCloseButtons\p03-DisableCloseButtons.vcxproj", "{76CF0CF9-AA10-4D77-9925-1EFE0A5CA208}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p04-ChangeCursor", "p04-ChangeCursor\p04-ChangeCursor.vcxproj", "{4AB607D5-CAE0-484F-BE43-3F7E23BB8911}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}.Debug|Win32.Build.0 = Debug|Win32
+		{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}.Release|Win32.ActiveCfg = Release|Win32
+		{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}.Release|Win32.Build.0 = Release|Win32
+		{76CF0CF9-AA10-4D77-9925-1EFE0A5CA208}.Debug|Win32.ActiveCfg = Debug|Win32
+		{76CF0CF9-AA10-4D77-9925-1EFE0A5CA208}.Debug|Win32.Build.0 = Debug|Win32
+		{76CF0CF9-AA10-4D77-9925-1EFE0A5CA208}.Release|Win32.ActiveCfg = Release|Win32
+		{76CF0CF9-AA10-4D77-9925-1EFE0A5CA208}.Release|Win32.Build.0 = Release|Win32
+		{4AB607D5-CAE0-484F-BE43-3F7E23BB8911}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4AB607D5-CAE0-484F-BE43-3F7E23BB8911}.Debug|Win32.Build.0 = Debug|Win32
+		{4AB607D5-CAE0-484F-BE43-3F7E23BB8911}.Release|Win32.ActiveCfg = Release|Win32
+		{4AB607D5-CAE0-484F-BE43-3F7E23BB8911}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
