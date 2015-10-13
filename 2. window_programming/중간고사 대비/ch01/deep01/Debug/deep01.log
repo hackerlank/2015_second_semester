@@ -1,0 +1,13 @@
+﻿빌드 시작: 2015-10-14 오전 12:47:47
+     1>2 노드의 "C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch01\deep01\deep01.vcxproj" 프로젝트(build 대상)입니다.
+     1>InitializeBuildStatus:
+         "Debug\deep01.unsuccessfulbuild"에 연결(touching)하고 있습니다.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt HelloMFC.cpp
+         HelloMFC.cpp
+     1>c:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afx.h(24): fatal error C1189: #error :  Building MFC application with /MD[d] (CRT dll version) requires MFC shared dll version. Please #define _AFXDLL or do not use /MD[d]
+     1>"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch01\deep01\deep01.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+
+빌드하지 못했습니다.
+
+경과 시간: 00:00:00.09
