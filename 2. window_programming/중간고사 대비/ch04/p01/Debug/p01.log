@@ -1,21 +1,15 @@
-﻿빌드 시작: 2015-10-18 오후 6:10:17
-     1>5 노드의 "C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\p01\p01.vcxproj" 프로젝트(build 대상)입니다.
+﻿빌드 시작: 2015-10-18 오후 9:53:25
+     1>2 노드의 "C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\p01\p01.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\p01-cpaintdc.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
          모든 출력이 최신 상태입니다.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\p01-cpaintdc.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         모든 출력이 최신 상태입니다.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\p01-cpaintdc.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp MainFrm.cpp p01.cpp
-         p01.cpp
-         MainFrm.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\p01-cpaintdc.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ChildView.cpp
          ChildView.cpp
-         코드를 생성하고 있습니다...
        ResourceCompile:
          모든 출력이 최신 상태입니다.
        ManifestResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\p01-cpaintdc.exe.embed.manifest.res" Debug\p01-cpaintdc_manifest.rc 
+         모든 출력이 최신 상태입니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\p01-cpaintdc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.lib" /MACHINE:X86 Debug\p01.res
          "Debug\p01-cpaintdc.exe.embed.manifest.res"
@@ -25,14 +19,9 @@
          Debug\stdafx.obj
        Manifest:
          c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\p01-cpaintdc.exe.embed.manifest" /manifest "Debug\p01-cpaintdc.exe.intermediate.manifest" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\p01-cpaintdc.exe.embed.manifest.res" Debug\p01-cpaintdc_manifest.rc 
+         모든 출력이 최신 상태입니다.
        LinkEmbedManifest:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\p01-cpaintdc.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.lib" /MACHINE:X86 Debug\p01.res
-         "Debug\p01-cpaintdc.exe.embed.manifest.res"
-         Debug\ChildView.obj
-         Debug\MainFrm.obj
-         Debug\p01.obj
-         Debug\stdafx.obj
+         모든 출력이 최신 상태입니다.
          p01.vcxproj -> C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch04\Debug\p01-cpaintdc.exe
        FinalizeBuildStatus:
          "Debug\p01-cpaintdc.unsuccessfulbuild" 파일을 삭제하고 있습니다.
@@ -41,4 +30,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:04.95
+경과 시간: 00:00:01.34

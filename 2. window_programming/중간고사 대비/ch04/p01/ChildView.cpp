@@ -46,7 +46,7 @@ BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs)
 void CChildView::OnPaint() 
 {
 	CPaintDC dc(this); // 그리기를 위한 디바이스 컨텍스트입니다.
-	
+	CRect rect;
 	// TODO: 여기에 메시지 처리기 코드를 추가합니다.
 	dc.Rectangle(0, 0, 200, 100);
 	dc.Ellipse(200, 100, 500, 200);
