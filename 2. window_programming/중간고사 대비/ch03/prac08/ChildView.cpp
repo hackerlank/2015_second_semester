@@ -36,13 +36,13 @@ BOOL CChildView::PreCreateWindow(CREATESTRUCT& cs)
 		return FALSE;
 
 	cs.dwExStyle |= WS_EX_CLIENTEDGE;
-	cs.style &= ~WS_BORDER;
+	cs.style &= ~(WS_BORDER|WS_SYSMENU|WS_THICKFRAME);
 	cs.lpszClass = AfxRegisterWndClass(CS_HREDRAW|CS_VREDRAW|CS_DBLCLKS, 
 		::LoadCursor(NULL, IDC_ARROW), reinterpret_cast<HBRUSH>(COLOR_WINDOW+1), NULL);
 
 	//ch03-prac09 : 뷰 윈도우에 가로와 세로 스크롤 바가 나타나도록 수정하시오
-	cs.style |= WS_VSCROLL|WS_HSCROLL;
-
+	//cs.style |= WS_VSCROLL|WS_HSCROLL;
+	
 	
 
 	return TRUE;

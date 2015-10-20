@@ -53,7 +53,7 @@ void CChildView::OnPaint()
 	dc.TextOutA(50, 50, AfxGetApp()->m_pszExeName);
 	//ch03-prac06 : 실행핼때 입력된 명령행 인자를 화면에 출력하도록 수정하시오
 	dc.TextOutA(100, 100, AfxGetApp()->m_lpCmdLine);
-	//ch03-prac07 : CMainFrame의 윈도우 타이틀을 가져와 출력하도록 수정하시오
+	////ch03-prac07 : CMainFrame의 윈도우 타이틀을 가져와 출력하도록 수정하시오
 	//CMainFrame *frame = (CMainFrame*)AfxGetMainWnd()->GetWindowTextA();
 	//dc.TextOutA(150, 150, (CMainFrame*)AfxGetMainWnd()->GetWindowTextA(SetWindowText("gaga")));
 	//dc.TextOutA(150, 150, GetParent()->GetWindowTextA(str));

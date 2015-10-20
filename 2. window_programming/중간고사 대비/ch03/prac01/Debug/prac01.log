@@ -1,5 +1,5 @@
-﻿빌드 시작: 2015-10-16 오후 3:15:51
-     1>2 노드의 "C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\prac01\prac01.vcxproj" 프로젝트(build 대상)입니다.
+﻿빌드 시작: 2015-10-20 오전 9:12:13
+     1>2 노드의 "C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\prac01\prac01.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\prac01.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
@@ -11,7 +11,7 @@
        ManifestResourceCompile:
          모든 출력이 최신 상태입니다.
        Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\Debug\prac01.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\prac01.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\Debug\prac01.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\Debug\prac01.lib" /MACHINE:X86 Debug\prac01.res
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\Debug\prac01.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\prac01.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\Debug\prac01.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\Debug\prac01.lib" /MACHINE:X86 Debug\prac01.res
          Debug\prac01.exe.embed.manifest.res
          Debug\ChildView.obj
          Debug\MainFrm.obj
@@ -22,12 +22,12 @@
          모든 출력이 최신 상태입니다.
        LinkEmbedManifest:
          모든 출력이 최신 상태입니다.
-         prac01.vcxproj -> C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\Debug\prac01.exe
+         prac01.vcxproj -> C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\Debug\prac01.exe
        FinalizeBuildStatus:
          "Debug\prac01.unsuccessfulbuild" 파일을 삭제하고 있습니다.
          "Debug\prac01.lastbuildstate"에 연결(touching)하고 있습니다.
-     1>"C:\Users\multimedia\GitHub\2015_second_semester\2. window_programming\시험대비\ch03\prac01\prac01.vcxproj" 프로젝트를 빌드했습니다(build 대상).
+     1>"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\중간고사 대비\ch03\prac01\prac01.vcxproj" 프로젝트를 빌드했습니다(build 대상).
 
 빌드했습니다.
 
-경과 시간: 00:00:00.51
+경과 시간: 00:00:00.46
