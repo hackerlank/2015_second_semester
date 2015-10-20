@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "01-Server", "01-Server\Server.vcxproj", "{223410F5-A36A-442E-979A-C862243B16E8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "02-InitWinsock", "02-InitWinsock\InitWinsock.vcxproj", "{507C26C0-F8C3-4D9B-9E79-F8FE6DE3DDF5}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "03-InitWinsock_ch02_prac02", "03-InitWinsock_ch02_prac02\03-InitWinsock_ch02_prac02.vcxproj", "{5ED5A7D3-6CA6-4E19-B45B-95F6D6621F67}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{223410F5-A36A-442E-979A-C862243B16E8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{223410F5-A36A-442E-979A-C862243B16E8}.Debug|Win32.Build.0 = Debug|Win32
+		{223410F5-A36A-442E-979A-C862243B16E8}.Release|Win32.ActiveCfg = Release|Win32
+		{223410F5-A36A-442E-979A-C862243B16E8}.Release|Win32.Build.0 = Release|Win32
+		{507C26C0-F8C3-4D9B-9E79-F8FE6DE3DDF5}.Debug|Win32.ActiveCfg = Debug|Win32
+		{507C26C0-F8C3-4D9B-9E79-F8FE6DE3DDF5}.Debug|Win32.Build.0 = Debug|Win32
+		{507C26C0-F8C3-4D9B-9E79-F8FE6DE3DDF5}.Release|Win32.ActiveCfg = Release|Win32
+		{507C26C0-F8C3-4D9B-9E79-F8FE6DE3DDF5}.Release|Win32.Build.0 = Release|Win32
+		{5ED5A7D3-6CA6-4E19-B45B-95F6D6621F67}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5ED5A7D3-6CA6-4E19-B45B-95F6D6621F67}.Debug|Win32.Build.0 = Debug|Win32
+		{5ED5A7D3-6CA6-4E19-B45B-95F6D6621F67}.Release|Win32.ActiveCfg = Release|Win32
+		{5ED5A7D3-6CA6-4E19-B45B-95F6D6621F67}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
