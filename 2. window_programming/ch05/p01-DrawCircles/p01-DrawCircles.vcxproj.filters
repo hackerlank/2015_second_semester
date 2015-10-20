@@ -16,15 +16,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
-    <None Include="res\p01DrawCircles.rc2">
+    <None Include="res\p01drawcircles.rc2">
       <Filter>리소스 파일</Filter>
     </None>
-    <None Include="res\p01-DrawCircles.ico">
+    <None Include="res\p01-drawcircles.ico">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="p01-DrawCircles.h">
+    <ClInclude Include="p01-drawcircles.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -44,7 +44,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p01-DrawCircles.cpp">
+    <ClCompile Include="p01-drawcircles.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -58,7 +58,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="p01-DrawCircles.rc">
+    <ResourceCompile Include="p01-drawcircles.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>

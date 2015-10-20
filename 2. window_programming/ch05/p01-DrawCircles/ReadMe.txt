@@ -1,20 +1,20 @@
 ================================================================================
-    MFC 라이브러리 : p01-DrawCircles 프로젝트 개요
+    MFC 라이브러리 : p01-drawcircles 프로젝트 개요
 ================================================================================
 
-응용 프로그램 마법사에서 이 p01-DrawCircles 응용 프로그램을 
+응용 프로그램 마법사에서 이 p01-drawcircles 응용 프로그램을 
 만들었습니다. 이 응용 프로그램은 MFC의 기본 사용법을 보여 줄 뿐만 아니라 응용 
 프로그램작성을 위한 기본 구조를 제공합니다.
 
-이 파일에는 p01-DrawCircles 응용 프로그램을 구성하는 각 파일에 대한
+이 파일에는 p01-drawcircles 응용 프로그램을 구성하는 각 파일에 대한
 요약 설명이 포함되어 있습니다.
 
-p01-DrawCircles.vcxproj
+p01-drawcircles.vcxproj
     응용 프로그램 마법사를 사용하여 생성된 VC++ 프로젝트의 주 프로젝트 파일입니다. 
     파일을 생성한 Visual C++ 버전에 대한 정보와 응용 프로그램 마법사를 사용하여 선택한 
     플랫폼, 구성 및 프로젝트 기능에 대한 정보가 들어 있습니다.
 
-p01-DrawCircles.vcxproj.filters
+p01-drawcircles.vcxproj.filters
     응용 프로그램 마법사를 사용하여 생성된 VC++ 프로젝트의 필터 파일입니다. 
     이 파일에는 프로젝트의 파일과 필터 간의 연결 정보가 들어 있습니다. 이러한 
     연결은 특정 노드에서 유사한 확장명으로 그룹화된 파일을 표시하기 위해 
@@ -22,26 +22,26 @@ p01-DrawCircles.vcxproj.filters
     있습니다.
 
 
-p01-DrawCircles.h
+p01-drawcircles.h
     응용 프로그램의 기본 헤더 파일입니다. 여기에는 다른 프로젝트 관련
-    헤더(Resource.h 포함)가 들어 있고 Cp01DrawCirclesApp 응용 프로그램
+    헤더(Resource.h 포함)가 들어 있고 Cp01drawcirclesApp 응용 프로그램
     클래스를 선언합니다.
 
-p01-DrawCircles.cpp
-    응용 프로그램 클래스 Cp01DrawCirclesApp이(가) 들어 있는 기본 응용 프로그램
+p01-drawcircles.cpp
+    응용 프로그램 클래스 Cp01drawcirclesApp이(가) 들어 있는 기본 응용 프로그램
     소스 파일입니다.
 
-p01-DrawCircles.rc
+p01-drawcircles.rc
     프로그램에서 사용하는 모든 Microsoft Windows 리소스의 목록입니다.
  여기에는 RES 하위 디렉터리에 저장된 아이콘, 비트맵 및 커서가
     포함됩니다. 이 파일은 Microsoft Visual C++에서 직접
     편집할 수 있습니다. 프로젝트 리소스는 1042에 있습니다.
 
-res\p01-DrawCircles.ico
+res\p01-drawcircles.ico
     응용 프로그램의 아이콘으로 사용되는 아이콘 파일입니다. 이 아이콘은
-    주 리소스 파일인 p01-DrawCircles.rc에 의해 포함됩니다.
+    주 리소스 파일인 p01-drawcircles.rc에 의해 포함됩니다.
 
-res\p01DrawCircles.rc2
+res\p01drawcircles.rc2
     이 파일에는 Microsoft Visual C++ 이외의 다른 도구에서 편집한 리소스가 
     들어 있습니다. 리소스 편집기로 편집할 수 없는 모든 리소스는
     이 파일에 넣어야 합니다.
@@ -76,14 +76,14 @@ ActiveX 컨트롤
 기타 표준 파일:
 
 StdAfx.h, StdAfx.cpp
-    이 파일은 미리 컴파일된 헤더 파일(PCH)인 p01-DrawCircles.pch와
+    이 파일은 미리 컴파일된 헤더 파일(PCH)인 p01-drawcircles.pch와
     미리 컴파일된 형식 파일인 StdAfx.obj를 빌드하는 데 사용됩니다.
 
 Resource.h
     새 리소스 ID를 정의하는 표준 헤더 파일입니다.
     Microsoft Visual C++에서 이 파일을 읽고 업데이트합니다.
 
-p01-DrawCircles.manifest
+p01-drawcircles.manifest
 	응용 프로그램 매니페스트 파일은 Windows XP에서 특정 버전의 Side-by-Side 
 	어셈블리에 대한 응용 프로그램 종속성을 설명하는 데 사용됩니다. 로더는 이 정보를 
 	사용하여 어셈블리 캐시에서 적절한 어셈블리를 로드하거나 응용 프로그램에서 전용 

@@ -11,8 +11,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{8EA5233E-C149-4E2F-AD78-7D434D6C4FBB}</ProjectGuid>
-    <RootNamespace>p01DrawCircles</RootNamespace>
+    <ProjectGuid>{53F7ED4F-6B8A-43D1-8FE0-1438A5422AAF}</ProjectGuid>
+    <RootNamespace>p01drawcircles</RootNamespace>
     <Keyword>MFCProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -95,13 +95,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
-    <None Include="res\p01-DrawCircles.ico" />
-    <None Include="res\p01DrawCircles.rc2" />
+    <None Include="res\p01-drawcircles.ico" />
+    <None Include="res\p01drawcircles.rc2" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ChildView.h" />
     <ClInclude Include="MainFrm.h" />
-    <ClInclude Include="p01-DrawCircles.h" />
+    <ClInclude Include="p01-drawcircles.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -109,21 +109,21 @@
   <ItemGroup>
     <ClCompile Include="ChildView.cpp" />
     <ClCompile Include="MainFrm.cpp" />
-    <ClCompile Include="p01-DrawCircles.cpp" />
+    <ClCompile Include="p01-drawcircles.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="p01-DrawCircles.rc" />
+    <ResourceCompile Include="p01-drawcircles.rc" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
   <ProjectExtensions>
     <VisualStudio>
-      <UserProperties RESOURCE_FILE="p01-DrawCircles.rc" />
+      <UserProperties RESOURCE_FILE="p01-drawcircles.rc" />
     </VisualStudio>
   </ProjectExtensions>
 </Project>

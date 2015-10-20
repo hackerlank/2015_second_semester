@@ -3,7 +3,7 @@
 //
 
 #include "stdafx.h"
-#include "p01-DrawCircles.h"
+#include "p01-drawcircles.h"
 
 #include "MainFrm.h"
 
@@ -18,7 +18,6 @@ IMPLEMENT_DYNAMIC(CMainFrame, CFrameWnd)
 BEGIN_MESSAGE_MAP(CMainFrame, CFrameWnd)
 	ON_WM_CREATE()
 	ON_WM_SETFOCUS()
-	ON_WM_NCLBUTTONDOWN()
 END_MESSAGE_MAP()
 
 static UINT indicators[] =
@@ -105,16 +104,4 @@ BOOL CMainFrame::OnCmdMsg(UINT nID, int nCode, void* pExtra, AFX_CMDHANDLERINFO*
 
 	// 그렇지 않으면 기본 처리합니다.
 	return CFrameWnd::OnCmdMsg(nID, nCode, pExtra, pHandlerInfo);
-}
-
-
-void CMainFrame::OnNcLButtonDown(UINT nHitTest, CPoint point)
-{
-	if(nHitTest == HTCLOSE) {
-		MessageBox("zack greinke", "21");
-	} else {
-		CFrameWnd::OnNcLButtonDown(nHitTest, point);
-	}
-
-	
 }

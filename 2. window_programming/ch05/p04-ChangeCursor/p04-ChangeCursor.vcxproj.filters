@@ -16,15 +16,18 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="ReadMe.txt" />
-    <None Include="res\p04ChangeCursor.rc2">
+    <None Include="res\p04changecursor.rc2">
       <Filter>리소스 파일</Filter>
     </None>
-    <None Include="res\p04-ChangeCursor.ico">
+    <None Include="res\p04-changecursor.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
       <Filter>리소스 파일</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="p04-ChangeCursor.h">
+    <ClInclude Include="p04-changecursor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
@@ -44,7 +47,7 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="p04-ChangeCursor.cpp">
+    <ClCompile Include="p04-changecursor.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
@@ -58,7 +61,7 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ResourceCompile Include="p04-ChangeCursor.rc">
+    <ResourceCompile Include="p04-changecursor.rc">
       <Filter>리소스 파일</Filter>
     </ResourceCompile>
   </ItemGroup>

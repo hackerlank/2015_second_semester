@@ -1,5 +1,5 @@
 
-// p04-ChangeCursor.h : p04-ChangeCursor 응용 프로그램에 대한 주 헤더 파일
+// p04-changecursor.h : p04-changecursor 응용 프로그램에 대한 주 헤더 파일
 //
 #pragma once
 
@@ -10,14 +10,14 @@
 #include "resource.h"       // 주 기호입니다.
 
 
-// Cp04ChangeCursorApp:
-// 이 클래스의 구현에 대해서는 p04-ChangeCursor.cpp을 참조하십시오.
+// Cp04changecursorApp:
+// 이 클래스의 구현에 대해서는 p04-changecursor.cpp을 참조하십시오.
 //
 
-class Cp04ChangeCursorApp : public CWinApp
+class Cp04changecursorApp : public CWinApp
 {
 public:
-	Cp04ChangeCursorApp();
+	Cp04changecursorApp();
 
 
 // 재정의입니다.
@@ -32,4 +32,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern Cp04ChangeCursorApp theApp;
+extern Cp04changecursorApp theApp;

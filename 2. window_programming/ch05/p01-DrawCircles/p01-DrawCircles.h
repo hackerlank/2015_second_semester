@@ -1,5 +1,5 @@
 
-// p01-DrawCircles.h : p01-DrawCircles 응용 프로그램에 대한 주 헤더 파일
+// p01-drawcircles.h : p01-drawcircles 응용 프로그램에 대한 주 헤더 파일
 //
 #pragma once
 
@@ -10,14 +10,14 @@
 #include "resource.h"       // 주 기호입니다.
 
 
-// Cp01DrawCirclesApp:
-// 이 클래스의 구현에 대해서는 p01-DrawCircles.cpp을 참조하십시오.
+// Cp01drawcirclesApp:
+// 이 클래스의 구현에 대해서는 p01-drawcircles.cpp을 참조하십시오.
 //
 
-class Cp01DrawCirclesApp : public CWinApp
+class Cp01drawcirclesApp : public CWinApp
 {
 public:
-	Cp01DrawCirclesApp();
+	Cp01drawcirclesApp();
 
 
 // 재정의입니다.
@@ -32,4 +32,4 @@ public:
 	DECLARE_MESSAGE_MAP()
 };
 
-extern Cp01DrawCirclesApp theApp;
+extern Cp01drawcirclesApp theApp;

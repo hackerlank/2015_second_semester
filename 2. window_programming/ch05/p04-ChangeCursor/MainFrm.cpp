@@ -3,7 +3,7 @@
 //
 
 #include "stdafx.h"
-#include "p04-ChangeCursor.h"
+#include "p04-changecursor.h"
 
 #include "MainFrm.h"
 
