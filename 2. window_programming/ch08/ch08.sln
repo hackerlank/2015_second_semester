@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p01-Button1", "p01-Button1\p01-Button1.vcxproj", "{2BDB09FD-0AAB-4537-A147-574D49190AED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p02-resource", "p02-resource\p02-resource.vcxproj", "{443EB496-F963-4BA3-9B12-898777BF890D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "xx02-static", "xx02-static\xx02-static.vcxproj", "{B88B7475-123A-4A85-BA0F-C4B74F80CAFD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2BDB09FD-0AAB-4537-A147-574D49190AED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2BDB09FD-0AAB-4537-A147-574D49190AED}.Debug|Win32.Build.0 = Debug|Win32
+		{2BDB09FD-0AAB-4537-A147-574D49190AED}.Release|Win32.ActiveCfg = Release|Win32
+		{2BDB09FD-0AAB-4537-A147-574D49190AED}.Release|Win32.Build.0 = Release|Win32
+		{443EB496-F963-4BA3-9B12-898777BF890D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{443EB496-F963-4BA3-9B12-898777BF890D}.Debug|Win32.Build.0 = Debug|Win32
+		{443EB496-F963-4BA3-9B12-898777BF890D}.Release|Win32.ActiveCfg = Release|Win32
+		{443EB496-F963-4BA3-9B12-898777BF890D}.Release|Win32.Build.0 = Release|Win32
+		{B88B7475-123A-4A85-BA0F-C4B74F80CAFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{B88B7475-123A-4A85-BA0F-C4B74F80CAFD}.Debug|Win32.Build.0 = Debug|Win32
+		{B88B7475-123A-4A85-BA0F-C4B74F80CAFD}.Release|Win32.ActiveCfg = Release|Win32
+		{B88B7475-123A-4A85-BA0F-C4B74F80CAFD}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
