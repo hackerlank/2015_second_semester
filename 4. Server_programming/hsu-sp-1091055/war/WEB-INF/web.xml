@@ -29,8 +29,31 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Serve</servlet-name>
 		<url-pattern>/serve</url-pattern>
 	</servlet-mapping>
-
+	
+	<!-- ch08dp eogks servlet -->
+	<servlet>
+		<servlet-name>readInitParamJSP</servlet-name>
+		<jsp-file>/ch08/readInitParam.jsp</jsp-file>
+		<init-param>
+			<param-name>e-mail</param-name>
+			<param-value>game@book.com</param-value>
+		</init-param>
+		<init-param>
+			<param-name>emailHost</param-name>
+			<param-value>151.68.167.201</param-value>
+		</init-param>
+		<init-param>
+			<param-name>webMaster</param-name>
+			<param-value>woong : 1091055</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>readInitParamJSP</servlet-name>
+		<url-pattern>/ch08/readParam.jsp</url-pattern>
+	</servlet-mapping>
+	<!-- ch08dp eogks servlet -->
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
+	
 </web-app>
