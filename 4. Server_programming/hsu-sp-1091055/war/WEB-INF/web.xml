@@ -30,6 +30,17 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<url-pattern>/serve</url-pattern>
 	</servlet-mapping>
 	
+	<error-page>
+	<error-code>404</error-code>
+	<location>/ch10/error/404errorHandler.jsp</location>
+</error-page>
+
+
+<error-page>
+	<error-code>500</error-code>
+	<location>/ch10/error/500errorHandler.jsp</location>
+</error-page>
+	
 	<!-- ch08dp eogks servlet -->
 	<servlet>
 		<servlet-name>readInitParamJSP</servlet-name>
