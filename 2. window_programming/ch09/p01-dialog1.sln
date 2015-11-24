@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p01-dialog1", "p01-dialog1\p01-dialog1.vcxproj", "{41C58646-BF1D-4E9A-A183-01669AB705DB}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p02-dialog2", "p02-dialog2\p02-dialog2.vcxproj", "{A630384F-CB22-4CA8-BF29-425335DE77D8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p01-dialogbase", "p01-dialogbase\p01-dialogbase.vcxproj", "{A2251A9F-BAC2-41FB-94AC-AA3722DBCBED}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p05-Colordialog", "p05-Colordialog\p05-Colordialog.vcxproj", "{96A2A831-2E78-4DC4-8543-AB67F85E16CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41C58646-BF1D-4E9A-A183-01669AB705DB}.Debug|Win32.ActiveCfg = Debug|Win32
+		{41C58646-BF1D-4E9A-A183-01669AB705DB}.Debug|Win32.Build.0 = Debug|Win32
+		{41C58646-BF1D-4E9A-A183-01669AB705DB}.Release|Win32.ActiveCfg = Release|Win32
+		{41C58646-BF1D-4E9A-A183-01669AB705DB}.Release|Win32.Build.0 = Release|Win32
+		{A630384F-CB22-4CA8-BF29-425335DE77D8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A630384F-CB22-4CA8-BF29-425335DE77D8}.Debug|Win32.Build.0 = Debug|Win32
+		{A630384F-CB22-4CA8-BF29-425335DE77D8}.Release|Win32.ActiveCfg = Release|Win32
+		{A630384F-CB22-4CA8-BF29-425335DE77D8}.Release|Win32.Build.0 = Release|Win32
+		{A2251A9F-BAC2-41FB-94AC-AA3722DBCBED}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A2251A9F-BAC2-41FB-94AC-AA3722DBCBED}.Debug|Win32.Build.0 = Debug|Win32
+		{A2251A9F-BAC2-41FB-94AC-AA3722DBCBED}.Release|Win32.ActiveCfg = Release|Win32
+		{A2251A9F-BAC2-41FB-94AC-AA3722DBCBED}.Release|Win32.Build.0 = Release|Win32
+		{96A2A831-2E78-4DC4-8543-AB67F85E16CE}.Debug|Win32.ActiveCfg = Debug|Win32
+		{96A2A831-2E78-4DC4-8543-AB67F85E16CE}.Debug|Win32.Build.0 = Debug|Win32
+		{96A2A831-2E78-4DC4-8543-AB67F85E16CE}.Release|Win32.ActiveCfg = Release|Win32
+		{96A2A831-2E78-4DC4-8543-AB67F85E16CE}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
