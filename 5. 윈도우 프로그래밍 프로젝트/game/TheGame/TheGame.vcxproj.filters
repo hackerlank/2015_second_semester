@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Framework">
+      <UniqueIdentifier>{c32275d2-34f6-4664-b8c4-f83dd1a60533}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="FrameworkMFC">
+      <UniqueIdentifier>{8828c0bd-3afd-4b0a-915b-d47f874a84db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MrNomGame">
+      <UniqueIdentifier>{7f0f610a-0989-4794-b25c-54dc40f986eb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\TheGame.rc2">
+      <Filter>리소스 파일</Filter>
+    </None>
+    <None Include="res\TheGame.ico">
+      <Filter>리소스 파일</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TheGame.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildView.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Game.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Graphics.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Input.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\KeyboardHandler.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\KeyEvent.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\MouseEvent.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\MouseHandler.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Pixmap.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Screen.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWorkMFC\MfcGame.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWorkMFC\MfcGraphics.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWorkMFC\MfcInput.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="FrameWorkMFC\MfcPixmap.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MrNomGame\Assets.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="MrNomGame\LoadingScreen.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="MrNomGame\MainMenuScreen.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="MrNomGame\MrNomGame.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpScreen.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpScreen2.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="HelpScreen3.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="HighScoreScreen.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Framework\Settings.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Audio.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Music.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="Sound.h">
+      <Filter>Framework</Filter>
+    </ClInclude>
+    <ClInclude Include="MfcAudio.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MfcSound.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="MfcMusic.h">
+      <Filter>FrameworkMFC</Filter>
+    </ClInclude>
+    <ClInclude Include="Stain.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="SnakePart.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Snake.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="World.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+    <ClInclude Include="GameScreen.h">
+      <Filter>MrNomGame</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="TheGame.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildView.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Game.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Graphics.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Input.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\KeyboardHandler.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\KeyEvent.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\MouseEvent.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\MouseHandler.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Pixmap.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Screen.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWorkMFC\MfcGame.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWorkMFC\MfcGraphics.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWorkMFC\MfcInput.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="FrameWorkMFC\MfcPixmap.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MrNomGame\Assets.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MrNomGame\LoadingScreen.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MrNomGame\MainMenuScreen.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="MrNomGame\MrNomGame.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpScreen.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpScreen2.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="HelpScreen3.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="HighScoreScreen.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Framework\Settings.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Audio.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Music.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="Sound.cpp">
+      <Filter>Framework</Filter>
+    </ClCompile>
+    <ClCompile Include="MfcAudio.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MfcSound.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="MfcMusic.cpp">
+      <Filter>FrameworkMFC</Filter>
+    </ClCompile>
+    <ClCompile Include="Stain.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="SnakePart.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="Snake.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="World.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+    <ClCompile Include="GameScreen.cpp">
+      <Filter>MrNomGame</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TheGame.rc">
+      <Filter>리소스 파일</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
