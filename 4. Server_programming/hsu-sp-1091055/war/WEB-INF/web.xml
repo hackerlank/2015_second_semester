@@ -29,17 +29,27 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
 		<servlet-name>Serve</servlet-name>
 		<url-pattern>/serve</url-pattern>
 	</servlet-mapping>
-	
+	<!-- error page servlet -->
 	<error-page>
-	<error-code>404</error-code>
-	<location>/ch10/error/404errorHandler.jsp</location>
-</error-page>
-
-
-<error-page>
-	<error-code>500</error-code>
-	<location>/ch10/error/500errorHandler.jsp</location>
-</error-page>
+		<error-code>404</error-code>
+		<location>/ch10/error/404errorHandler.jsp</location>
+	</error-page>
+	<error-page>
+		<error-code>500</error-code>
+		<location>/ch10/error/500errorHandler.jsp</location>
+	</error-page>
+	<!-- error page servlet -->
+	
+	<!-- store admin info in session -->
+	<context-param>
+		<param-name>MasterID</param-name>
+		<param-value>1091055</param-value>
+	</context-param>
+	<context-param>
+		<param-name>MasterPassword</param-name>
+		<param-value>112233</param-value>
+	</context-param>
+	<!-- store admin info in session -->
 	
 	<!-- ch08dp eogks servlet -->
 	<servlet>
