@@ -4,6 +4,7 @@
 const	float	CWorld::TICK_INITIAL= 0.5;
 const	float	CWorld::TICK_DECREMENT= 0.05f;
 float	CWorld::tick= 0.0f;
+
 CWorld::CWorld(void)
 {
 	gameOver= false;

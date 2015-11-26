@@ -30,3 +30,12 @@ CPixmap		*CAssets::tail=NULL;
 CPixmap		*CAssets::stain1=NULL;
 CPixmap		*CAssets::stain2=NULL;
 CPixmap		*CAssets::stain3=NULL;
+
+//사운드 코드인가?
+
+CSound		*CAssets::click = NULL;
+CSound		*CAssets::bitten = NULL;
+CSound		*CAssets::eat = NULL;
+CSound		*CAssets::music = NULL;
+
+

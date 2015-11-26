@@ -1,77 +1,15 @@
-﻿빌드 시작: 2015-11-24 오후 6:58:22
+﻿빌드 시작: 2015-11-26 오후 4:46:40
      1>2 노드의 "C:\Users\multimedia\Desktop\game\TheGame\TheGame.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
          "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\TheGame.unsuccessfulbuild"을(를) 만들고 있습니다.
        ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\ /I.\FrameWorkMFC /I.\Framework /I.\MrNomGame /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\TheGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
-         stdafx.cpp
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\ /I.\FrameWorkMFC /I.\Framework /I.\MrNomGame /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\TheGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Audio.cpp ChildView.cpp FrameWorkMFC\MfcGame.cpp FrameWorkMFC\MfcGraphics.cpp FrameWorkMFC\MfcInput.cpp FrameWorkMFC\MfcPixmap.cpp Framework\Game.cpp Framework\Graphics.cpp Framework\Input.cpp Framework\KeyboardHandler.cpp Framework\KeyEvent.cpp Framework\MouseEvent.cpp Framework\MouseHandler.cpp Framework\Pixmap.cpp Framework\Screen.cpp Framework\Settings.cpp GameScreen.cpp HelpScreen.cpp HelpScreen2.cpp HelpScreen3.cpp HighScoreScreen.cpp MainFrm.cpp MfcAudio.cpp MfcMusic.cpp MfcSound.cpp MrNomGame\Assets.cpp MrNomGame\LoadingScreen.cpp MrNomGame\MainMenuScreen.cpp MrNomGame\MrNomGame.cpp Music.cpp Snake.cpp SnakePart.cpp Sound.cpp Stain.cpp TheGame.cpp World.cpp
-         World.cpp
-     1>c:\users\multimedia\desktop\game\thegame\world.cpp(36): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-         TheGame.cpp
-         Stain.cpp
-         Sound.cpp
-         SnakePart.cpp
-         Snake.cpp
-     1>c:\users\multimedia\desktop\game\thegame\snake.cpp(17): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>c:\users\multimedia\desktop\game\thegame\snake.cpp(75): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-         Music.cpp
-         MrNomGame.cpp
+         모든 출력이 최신 상태입니다.
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I.\ /I.\FrameWorkMFC /I.\Framework /I.\MrNomGame /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\TheGame.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt MrNomGame\MainMenuScreen.cpp
          MainMenuScreen.cpp
-         LoadingScreen.cpp
-         Assets.cpp
-         MfcSound.cpp
-         MfcMusic.cpp
-         MfcAudio.cpp
-         MainFrm.cpp
-         HighScoreScreen.cpp
-         HelpScreen3.cpp
-         HelpScreen2.cpp
-         HelpScreen.cpp
-         GameScreen.cpp
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(12): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(28): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(29): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(30): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(31): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(39): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(46): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(55): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(69): warning C4244: '인수' : 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(77): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(94): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(104): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(125): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(146): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(147): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(148): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(149): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(155): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(155): warning C4482: 비표준 확장이 사용되었습니다. 정규화된 이름에 'CGameScreen::GameState' 열거형을 사용했습니다.
-     1>c:\users\multimedia\desktop\game\thegame\gamescreen.cpp(189): warning C4018: '<' : signed 또는 unsigned가 일치하지 않습니다.
-         코드를 생성하고 있습니다...
-         컴파일하고 있습니다...
-         Settings.cpp
-         Screen.cpp
-         Pixmap.cpp
-         MouseHandler.cpp
-         MouseEvent.cpp
-         KeyEvent.cpp
-         KeyboardHandler.cpp
-         Input.cpp
-         Graphics.cpp
-         Game.cpp
-         MfcPixmap.cpp
-         MfcInput.cpp
-         MfcGraphics.cpp
-         MfcGame.cpp
-         ChildView.cpp
-         Audio.cpp
-         코드를 생성하고 있습니다...
        ResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0412" /IDebug\ /nologo /fo"Debug\TheGame.res" TheGame.rc 
+         모든 출력이 최신 상태입니다.
        ManifestResourceCompile:
-         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\TheGame.exe.embed.manifest.res" Debug\TheGame_manifest.rc 
+         모든 출력이 최신 상태입니다.
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\Desktop\game\Debug\TheGame.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\TheGame.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\Desktop\game\Debug\TheGame.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\Desktop\game\Debug\TheGame.lib" /MACHINE:X86 Debug\TheGame.res
          Debug\TheGame.exe.embed.manifest.res
@@ -125,4 +63,4 @@
 
 빌드했습니다.
 
-경과 시간: 00:00:13.56
+경과 시간: 00:00:00.91

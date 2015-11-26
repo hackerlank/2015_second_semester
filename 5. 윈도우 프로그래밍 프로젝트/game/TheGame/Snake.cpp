@@ -4,7 +4,9 @@
 
 CSnake::CSnake(void)
 {
-	direction= UP;
+	//시작하자마자 가는 방향 설정
+	direction= LEFT;
+	//꼬리 설정(배열에 들어감)
 	parts.push_back(new CSnakePart(5, 6));
 	parts.push_back(new CSnakePart(5, 7));
 	parts.push_back(new CSnakePart(5, 8));
@@ -20,17 +22,22 @@ CSnake::~CSnake(void)
 	parts.clear();
 }
 
-void	CSnake::turnLetf()
-{
-	direction += 1;
-	if(direction > RIGHT)	direction= UP;
+////키보드 방향키로 움직이게 하기
+void	CSnake::turnLetf() {
+	direction = LEFT;
+	/*direction += 1;
+	if(direction > RIGHT)	direction= UP;*/
 }
 
-void	CSnake::turnRight()
-{
-	direction -= 1;
-	if(direction < UP)	direction= RIGHT;
+void	CSnake::turnRight() {
+	direction = RIGHT;
+	/*direction -= 1;
+	if(direction < UP)	direction= RIGHT;*/
 }
+void	CSnake::turnUp() { direction = UP; }
+void	CSnake::turnDown() { direction = DOWN; }
+////키보드 방향키로 움직이게 하기
+
 
 void	CSnake::eat()
 {
@@ -55,7 +62,7 @@ void	CSnake::advance()
 		part->y= before->y;
 	}
 
-	if(direction == UP)	head->y -= 1;
+	if(direction == UP)		head->y -= 1;
 	if(direction == LEFT)	head->x -= 1;
 	if(direction == DOWN)	head->y += 1;
 	if(direction == RIGHT)	head->x += 1;
@@ -74,7 +81,8 @@ bool	CSnake::checkBitten()
 
 	for(int i=1;i<parts.size();i++){
 		CSnakePart	*part= parts[i];
-		if(head->x == part->x && head->y == part->y)	return true;
+		if(head->x == part->x && head->y == part->y)
+			return true;
 	}
 	return false;
 }

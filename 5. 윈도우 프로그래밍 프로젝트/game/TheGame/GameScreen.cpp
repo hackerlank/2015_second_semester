@@ -5,6 +5,10 @@
 #include	"Graphics.h"
 #include	"MrNomGame.h"
 #include	"MainMenuScreen.h"
+//사운드 넣기
+#pragma comment(lib, "winmm")
+#include <MMSystem.h>
+#include "Settings.h"
 
 
 CGameScreen::CGameScreen(CGame *game): CScreen(game)
@@ -23,10 +27,13 @@ CGameScreen::~CGameScreen(void)
 
 void	CGameScreen::update(int deltaTime)
 {
-//	CGraphics	*g=game->getGraphics();
+	CGraphics	*g=game->getGraphics();
 
 	if(state == GameState::Ready)		updateReady();
-	else	if(state == GameState::Running)		updateRunning(deltaTime);
+	else	if(state == GameState::Running) {		
+		updateRunning(deltaTime);
+
+	}
 	else	if(state == GameState::Paused)		updatePaused();
 	else	if(state == GameState::GameOver)	updateGameOver();
 	game->getInput()->getKeyEvents();	
@@ -37,34 +44,59 @@ void	CGameScreen::updateReady()
 {
 	std::vector<CMouseEvent*>	mouseEvents= game->getInput()->getMouseEvents();
 	if(mouseEvents.size() > 0)	state= GameState::Running;
+	
+	//ready 창에서 키보드 이벤트 만들기
+		std::vector<CKeyEvent*> keyEvents = game->getInput()->getKeyEvents();
+		if(keyEvents.size() > 0) state = GameState::Running;
+	//ready 창에서 키보드 이벤트 만들기
 }
 
 void	CGameScreen::updateRunning(int deltaTime)
 {
+	//////사운드 넣기
+	//CString soundpath = _T(".\assets\bitten.ogg");
+	//PlaySound(soundpath, AfxGetInstanceHandle(), SND_ASYNC | SND_LOOP);
+	//////사운드 넣기
+
 	std::vector<CMouseEvent*>	mouseEvents= game->getInput()->getMouseEvents();
 
-	for(int i=0;i<mouseEvents.size();i++){
+	for(int i=0;i<mouseEvents.size();i++) {
 		CMouseEvent	*evt= mouseEvents[i];
-		if(evt->type == CMouseEvent::MOUSE_UP){
-			if(evt->x < 64 && evt->y < 64){
-				/*
-				if(CSettings::soundEnabled){
-					CAssets::click::play(1);
-				}
-				*/
+		if(evt->type == CMouseEvent::MOUSE_UP) {
+			if(evt->x < 64 && evt->y < 64) {
+				
+				////사운드 넣기
+				//if(CSettings::soundEnabled){
+				//	CAssets.bitten->play(1);
+				//}
+				
 				state= GameState::Paused;
 				return;
 			}
 		}
 		if(evt->type == CMouseEvent::MOUSE_DOWN){
-			if(evt->x < 64 && evt->y > 416){
-				world->snake->turnLetf();
-			}
-			if(evt->x > 256 && evt->y > 416){
-				world->snake->turnRight();
-			}
+			////마우스 클릭으로 이동시키기
+			if(evt->x < 35 && evt->y > 416)					world->snake->turnLetf();
+			if(evt->x > 40 && evt->x < 80 && evt->y > 416)	world->snake->turnRight();
+			if(evt->x > 90 && evt->x < 130 && evt->y > 416)	world->snake->turnUp();
+			if(evt->x > 140 && evt->x < 180 && evt->y >416) world->snake->turnDown();
 		}
 	}
+
+	//game중 키보드 방향키 이벤트 만들기
+		std::vector<CKeyEvent*> keyEvents = game->getInput()->getKeyEvents();
+		for (int i=0 ; i<keyEvents.size() ; i++) {
+			CKeyEvent *kevt = keyEvents[i];
+			if(kevt->type == CKeyEvent::KEY_DOWN) {
+				if(kevt->keyCode == VK_LEFT) world->snake->turnLetf();
+				if(kevt->keyCode == VK_RIGHT) world->snake->turnRight();
+				if(kevt->keyCode == VK_UP) world->snake->turnUp();
+				if(kevt->keyCode == VK_DOWN) world->snake->turnDown();
+
+			}
+		} 
+	//game중 키보드 방향키 이벤트 만들기
+	
 
 	world->update(deltaTime);
 
@@ -228,21 +260,29 @@ void	CGameScreen::drawText(CGraphics *g, CString line, int x, int y)
 
 }
 
+//ready화면 미리 그려주는 함수
 void	CGameScreen::drawReadyUI()
 {
 	CGraphics	*g= game->getGraphics();
 	g->drawPixmap(CAssets::ready, 47, 100);
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
+	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
 }
 
+//게임하는동안 그려주는 함수
 void	CGameScreen::drawRunningUI()
 {
 	CGraphics	*g= game->getGraphics();
-	g->drawPixmap(CAssets::buttons, 0, 0, 64, 128, 64, 64);
+	//일시정지 버튼
+	g->drawPixmap(CAssets::buttons, 0, 0, 64, 192, 64, 64);
+	//중간에 선긋기
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
-	g->drawPixmap(CAssets::buttons, 0, 416, 64, 64, 64, 64);
-	g->drawPixmap(CAssets::buttons, 256, 416, 0, 64, 64, 64);
-
+	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
+	//네방향 구현하기
+	g->drawPixmap(CAssets::buttons, 20, 416, 64, 64, 64, 64); //<-
+	g->drawPixmap(CAssets::buttons, 40, 416, 0, 64, 64, 64); //->
+	g->drawPixmap(CAssets::buttons, 20, 416, 0, 128, 64, 64); //^
+	g->drawPixmap(CAssets::buttons, 140, 450, 64, 128, 64, 64); //down
 }
 
 void	CGameScreen::drawPausedUI()
@@ -250,6 +290,7 @@ void	CGameScreen::drawPausedUI()
 	CGraphics	*g= game->getGraphics();
 	g->drawPixmap(CAssets::pause, 80, 100);
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
+	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
 
 }
 
@@ -259,5 +300,6 @@ void	CGameScreen::drawGameOverUI()
 	g->drawPixmap(CAssets::gameOver, 62, 100);
 	g->drawPixmap(CAssets::buttons, 128, 200, 0, 128, 64, 64);
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
+	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
 }
 

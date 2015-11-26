@@ -21,7 +21,7 @@ CMainMenuScreen::~CMainMenuScreen(void)
 void	CMainMenuScreen::update(int deltaTime)
 {
 	CGraphics	*g=game->getGraphics();
-	std::vector<CMouseEvent*>	mouseEvents= game->getInput()->getMouseEvents();
+	std::vector<CMouseEvent*>	mouseEvents = game->getInput()->getMouseEvents();
 	game->getInput()->getKeyEvents();	// we do not need any key events, but it will be accumulated if we do not remove them
 
 	int	w, h;
@@ -69,7 +69,9 @@ void	CMainMenuScreen::render()
 	g->drawPixmap(CAssets::logo, 32, 20);
 	g->drawPixmap(CAssets::mainMenu, 64, 220);
 	g->drawPixmap(CAssets::buttons, 0, 416, 0, 0, 64, 64);
-
+	//선 그려주기
+	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
+	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
 }
 
 

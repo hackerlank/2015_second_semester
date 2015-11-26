@@ -40,6 +40,7 @@ void	CLoadingScreen::update(int deltaTime)
 	CAssets::stain2= g->newPixMap("..\\assets\\stain2.png", CGraphics::ARGB4444);
 	CAssets::stain3= g->newPixMap("..\\assets\\stain3.png", CGraphics::ARGB4444);
 
+	//background.png파일의 크기에 따하 game의 사이즈가 바뀜
 	game->setSize(CAssets::background->getWidth(), CAssets::background->getHeight());
 
 	//newscreen

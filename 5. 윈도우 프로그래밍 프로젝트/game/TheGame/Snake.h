@@ -17,6 +17,10 @@ public:
 
 	void	turnLetf();
 	void	turnRight();
+	////Updown구현해야지
+		void	turnUp();
+		void	turnDown();
+	////Updown구현해야지
 	void	eat();
 	void	advance();
 	bool	checkBitten();

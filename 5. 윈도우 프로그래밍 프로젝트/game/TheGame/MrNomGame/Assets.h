@@ -1,5 +1,7 @@
 #pragma once
 #include	"Pixmap.h"
+//사운드 코드인가?
+#include	"Sound.h"
 
 class CAssets
 {
@@ -27,11 +29,13 @@ public:
 	static	CPixmap		*stain2;
 	static	CPixmap		*stain3;
 
-	/*
+	
 	static	CSound		*click;
 	static	CSound		*eat;
 	static	CSound		*bitten;
-	*/
+	static	CSound		*music;
+
+	
 
 };
 

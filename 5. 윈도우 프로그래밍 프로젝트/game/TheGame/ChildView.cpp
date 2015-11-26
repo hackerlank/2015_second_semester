@@ -102,6 +102,22 @@ void CChildView::OnSize(UINT nType, int cx, int cy)
 void CChildView::OnKeyDown(UINT nChar, UINT nRepCnt, UINT nFlags)
 {
 	// TODO: 여기에 메시지 처리기 코드를 추가 및/또는 기본값을 호출합니다.
+	/*switch(nChar) {
+	case VK_LEFT :
+		game->getInput()->OnKeyDown(nChar, nRepCnt, nFlags);
+		break;
+	case VK_RIGHT :
+		game->getInput()->OnKeyDown(nChar, nRepCnt, nFlags);
+		break;
+	case VK_UP :
+		game->getInput()->OnKeyDown(nChar, nRepCnt, nFlags);
+		break;
+	case VK_DOWN :
+		game->getInput()->OnKeyDown(nChar, nRepCnt, nFlags);
+		break;
+	}*/
+
+
 	game->getInput()->OnKeyDown(nChar, nRepCnt, nFlags);
 	CWnd::OnKeyDown(nChar, nRepCnt, nFlags);
 }
