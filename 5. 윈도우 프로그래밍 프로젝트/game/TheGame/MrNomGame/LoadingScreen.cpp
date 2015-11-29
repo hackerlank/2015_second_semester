@@ -36,9 +36,9 @@ void	CLoadingScreen::update(int deltaTime)
 	CAssets::headDown= g->newPixMap("..\\assets\\headDown.png", CGraphics::ARGB4444);
 	CAssets::headRight= g->newPixMap("..\\assets\\headRight.png", CGraphics::ARGB4444);
 	CAssets::tail= g->newPixMap("..\\assets\\tail.png", CGraphics::ARGB4444);
-	CAssets::stain1= g->newPixMap("..\\assets\\stain1.png", CGraphics::ARGB4444);
-	CAssets::stain2= g->newPixMap("..\\assets\\stain2.png", CGraphics::ARGB4444);
-	CAssets::stain3= g->newPixMap("..\\assets\\stain3.png", CGraphics::ARGB4444);
+	CAssets::stain1= g->newPixMap("..\\assets\\circle.png", CGraphics::ARGB4444);
+	CAssets::stain2= g->newPixMap("..\\assets\\circle.png", CGraphics::ARGB4444);
+	CAssets::stain3= g->newPixMap("..\\assets\\circle.png", CGraphics::ARGB4444);
 
 	//background.png파일의 크기에 따하 game의 사이즈가 바뀜
 	game->setSize(CAssets::background->getWidth(), CAssets::background->getHeight());

@@ -11,7 +11,6 @@ public:
 	CGameScreen(CGame *game);
 	~CGameScreen(void);
 	enum	GameState{	Ready, Running, Paused, GameOver};
-	
 	GameState	state;
 	CWorld		*world;
 	int			oldScore;

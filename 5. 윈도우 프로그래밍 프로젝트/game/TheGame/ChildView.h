@@ -16,6 +16,8 @@ public:
 	CChildView();
 	void	onIdle();
 
+
+
 // 특성입니다.
 public:
 	DWORD		previousTime;

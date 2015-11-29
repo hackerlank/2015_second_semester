@@ -12,7 +12,8 @@ CSettings::~CSettings(void)
 }
 
 boolean	CSettings::soundEnabled;
-int	CSettings::highscores[]={100, 80, 50, 30, 0};
+int	CSettings::highscores[]={0, 0, 0, 0, 0};
+
 
 void	CSettings::load(CString fileName)
 {

@@ -63,6 +63,7 @@ void CChildView::OnPaint()
 	dc.BitBlt(0, 0, w, h, canvas, 0, 0, SRCCOPY);
 	TRACE("w=%d, h=%d\n", w, h);
 
+
 }
 
 void	CChildView::onIdle()

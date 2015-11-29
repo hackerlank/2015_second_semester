@@ -8,7 +8,9 @@
 //사운드 넣기
 #pragma comment(lib, "winmm")
 #include <MMSystem.h>
+#include <Windows.h>
 #include "Settings.h"
+
 
 
 CGameScreen::CGameScreen(CGame *game): CScreen(game)
@@ -49,6 +51,9 @@ void	CGameScreen::updateReady()
 		std::vector<CKeyEvent*> keyEvents = game->getInput()->getKeyEvents();
 		if(keyEvents.size() > 0) state = GameState::Running;
 	//ready 창에서 키보드 이벤트 만들기
+
+		////사운드 넣기
+		PlaySound("..\\assets\\pac1.wav", NULL/*AfxGetInstanceHandle()*/,SND_ASYNC| SND_LOOP);
 }
 
 void	CGameScreen::updateRunning(int deltaTime)
@@ -56,10 +61,11 @@ void	CGameScreen::updateRunning(int deltaTime)
 	//////사운드 넣기
 	//CString soundpath = _T(".\assets\bitten.ogg");
 	//PlaySound(soundpath, AfxGetInstanceHandle(), SND_ASYNC | SND_LOOP);
+	
 	//////사운드 넣기
 
 	std::vector<CMouseEvent*>	mouseEvents= game->getInput()->getMouseEvents();
-
+	
 	for(int i=0;i<mouseEvents.size();i++) {
 		CMouseEvent	*evt= mouseEvents[i];
 		if(evt->type == CMouseEvent::MOUSE_UP) {
@@ -69,6 +75,8 @@ void	CGameScreen::updateRunning(int deltaTime)
 				//if(CSettings::soundEnabled){
 				//	CAssets.bitten->play(1);
 				//}
+
+				
 				
 				state= GameState::Paused;
 				return;
@@ -76,10 +84,10 @@ void	CGameScreen::updateRunning(int deltaTime)
 		}
 		if(evt->type == CMouseEvent::MOUSE_DOWN){
 			////마우스 클릭으로 이동시키기
-			if(evt->x < 35 && evt->y > 416)					world->snake->turnLetf();
-			if(evt->x > 40 && evt->x < 80 && evt->y > 416)	world->snake->turnRight();
-			if(evt->x > 90 && evt->x < 130 && evt->y > 416)	world->snake->turnUp();
-			if(evt->x > 140 && evt->x < 180 && evt->y >416) world->snake->turnDown();
+			if(evt->x < 20 && evt->y > 480 && evt->y < 530 )					world->snake->turnLetf();
+			if(evt->x > 80 && evt->x < 160 && evt->y > 480 && evt->y <530)	world->snake->turnRight();
+			if(evt->x > 20 && evt->x < 80 && evt->y > 320 && evt->y < 480)	world->snake->turnUp();
+			if(evt->x > 20 && evt->x < 80 && evt->y > 540) world->snake->turnDown();
 		}
 	}
 
@@ -107,6 +115,11 @@ void	CGameScreen::updateRunning(int deltaTime)
 		}
 		*/
 		state= GameState::GameOver;
+		
+		
+		//여기다가 끝나는 music.ogg 넣으면 되겠다. 
+		//PlaySound("C:\Users\multimedia\Desktop\game\assets\music.ogg", AfxGetInstanceHandle(), SND_ASYNC);
+	PlaySound("..\\assets\\game.wav", NULL/*AfxGetInstanceHandle()*/,SND_ASYNC);
 	}
 	if(oldScore != world->score){
 		oldScore= world->score;
@@ -163,6 +176,7 @@ void	CGameScreen::updateGameOver()
 					CAssets.eat.play(1);
 				}
 				*/
+				
 				game->setScreen(new CMainMenuScreen(game));
 			}
 		}
@@ -180,6 +194,10 @@ void	CGameScreen::render()
 	if(state == GameState::Paused)	drawPausedUI();
 	if(state == GameState::GameOver)	drawGameOverUI();
 	drawText(g, score, g->getWidth()/2-score.GetLength()*20/2, g->getHeight()-42);
+
+
+		//g->drawPixmap(CAssets::numbers, 100, 500, srcX, 0, srcWidth, 32);
+
 }
 
 void	CGameScreen::pause()
@@ -203,27 +221,30 @@ void	CGameScreen::dispose()
 
 void	CGameScreen::drawWorld(CWorld * world)
 {
+	CString str;
 	CGraphics	*g= game->getGraphics();
 	CSnake		*snake= world->snake;
 	CSnakePart	*head= snake->parts[0];
 	CStain		*stain= world->stain;
-
 	CPixmap	*stainPixmap= NULL;
 
 	if(stain->type == CStain::TYPE_1)	stainPixmap= CAssets::stain1;
 	if(stain->type == CStain::TYPE_2)	stainPixmap= CAssets::stain2;
 	if(stain->type == CStain::TYPE_3)	stainPixmap= CAssets::stain3;
 
-	int	x= stain->x*32;
+	int	x= stain->x*32; //먹이 좌표
 	int	y= stain->y*32;
-	g->drawPixmap(stainPixmap, x, y);
-
+	//for(int i=0 ; i<352 ; i+=32) {
+		//for(int j=0 ; j<352 ; j+=32) {
+			g->drawPixmap(stainPixmap, x, y);
+	//	}
+//	}
 	for(int i=1;i<snake->parts.size();i++){
 		CSnakePart	*part= snake->parts[i];
-		x= part->x*32;
+		x= part->x*32;//꼬리 좌표
 		y= part->y*32;
 
-		g->drawPixmap(CAssets::tail, x, y);
+		//g->drawPixmap(CAssets::tail, x, y);
 	}
 
 	CPixmap	*headPixmap= NULL;
@@ -238,6 +259,7 @@ void	CGameScreen::drawWorld(CWorld * world)
 
 void	CGameScreen::drawText(CGraphics *g, CString line, int x, int y)
 {
+	int i=1;
 	for(int i=0;i<line.GetLength();i++){
 		char	character= line.GetAt(i);
 		if(character == ' '){
@@ -254,7 +276,9 @@ void	CGameScreen::drawText(CGraphics *g, CString line, int x, int y)
 			srcX= (character - '0')*20;
 			srcWidth= 20;
 		}
-		g->drawPixmap(CAssets::numbers, x, y, srcX, 0, srcWidth, 32);
+			g->drawPixmap(CAssets::numbers, 200, 500, srcX, 0, srcWidth, 32);
+			g->drawPixmap(CAssets::numbers, 220, 500, 0, 0, 20, 32);
+		i=i+32;
 		x += srcWidth;
 	}
 
@@ -264,6 +288,7 @@ void	CGameScreen::drawText(CGraphics *g, CString line, int x, int y)
 void	CGameScreen::drawReadyUI()
 {
 	CGraphics	*g= game->getGraphics();
+	
 	g->drawPixmap(CAssets::ready, 47, 100);
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
 	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
@@ -278,11 +303,16 @@ void	CGameScreen::drawRunningUI()
 	//중간에 선긋기
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
 	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
-	//네방향 구현하기
-	g->drawPixmap(CAssets::buttons, 20, 416, 64, 64, 64, 64); //<-
-	g->drawPixmap(CAssets::buttons, 40, 416, 0, 64, 64, 64); //->
-	g->drawPixmap(CAssets::buttons, 20, 416, 0, 128, 64, 64); //^
-	g->drawPixmap(CAssets::buttons, 140, 450, 64, 128, 64, 64); //down
+	//네방향키 키보드 구현하기
+	g->drawPixmap(CAssets::buttons, -20, 480, 64, 64, 64, 64); //<-
+	g->drawPixmap(CAssets::buttons, 70, 480, 0, 64, 64, 64); //->
+	g->drawPixmap(CAssets::buttons, 30, 430, 0, 128, 64, 64); //^
+	g->drawPixmap(CAssets::buttons, 30, 520, 64, 128, 64, 64); //down
+
+	/*
+	int timer=0;
+	timer=timer+1;
+	g->drawRect(200,500,100,100,RGB(255,255,255));//시간을 여기다가?*/
 }
 
 void	CGameScreen::drawPausedUI()
@@ -296,9 +326,10 @@ void	CGameScreen::drawPausedUI()
 
 void	CGameScreen::drawGameOverUI()
 {
+
 	CGraphics	*g= game->getGraphics();
 	g->drawPixmap(CAssets::gameOver, 62, 100);
-	g->drawPixmap(CAssets::buttons, 128, 200, 0, 128, 64, 64);
+	g->drawPixmap(CAssets::buttons, 128, 200, 0, 192, 64, 64);
 	g->drawLine(0, 416, 480, 416, RGB(255, 255, 255));
 	g->drawLine(319, 416, 319, 0, RGB(255, 255, 255));
 }
