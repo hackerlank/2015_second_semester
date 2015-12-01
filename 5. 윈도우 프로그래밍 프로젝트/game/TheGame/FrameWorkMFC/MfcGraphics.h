@@ -27,5 +27,8 @@ public:
 	virtual	int		getHeight(){	return height; }
 	virtual	void*	getCanvas();
 
+	//text 출력 함수 구현
+	virtual void	drawText(int x, int y, int color,CString str);
+
 };
 

@@ -36,7 +36,7 @@ void	CHighScoreScreen::update(int delta)
 	for(int i=0;i<len;i++){
 		CMouseEvent	*event= mouseEvents[i];
 		if(event->type == CMouseEvent::MOUSE_UP){
-			if(event->x < 64 && event->y > 416){
+			if(event->x > 256 && event->y > 416){
 				game->setScreen(new CMainMenuScreen(game));
 				return;
 			}
@@ -59,7 +59,8 @@ void	CHighScoreScreen::render()
 
 	}
 
-	g->drawPixmap(CAssets::buttons, 0, 416, 64, 64, 64, 64);
+	//g->drawPixmap(CAssets::buttons, 0, 416, 64, 64, 64, 64);
+	g->drawPixmap(CAssets::buttons, 256, 416, 0, 128, 64, 64);
 }
 void	CHighScoreScreen::drawText(CGraphics *g, CString *line, int x, int y)
 {

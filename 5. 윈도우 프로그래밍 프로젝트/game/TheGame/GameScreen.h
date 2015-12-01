@@ -16,6 +16,9 @@ public:
 	int			oldScore;
 	CString		score;
 
+	TCHAR str[128];
+	int timerj;
+
 	virtual	void	update(int deltaTime);
 	virtual	void	render();
 	virtual	void	pause();

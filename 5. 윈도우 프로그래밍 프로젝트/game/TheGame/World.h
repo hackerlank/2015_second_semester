@@ -22,7 +22,11 @@ public:
 
 	int		*fields;
 	float	tickTime;
+
+	//sort
 	void bubblesort();
+	int tmp;
+
 	void	placeStain();
 	void	update(float deltaTime);
 };

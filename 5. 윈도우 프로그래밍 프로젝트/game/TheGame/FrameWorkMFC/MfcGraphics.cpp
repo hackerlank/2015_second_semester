@@ -64,6 +64,15 @@ void	CMfcGraphics::drawPixmap(CPixmap *pixmap, int x, int y)
 	::BitBlt(this->canvas->GetSafeHdc(), x, y, pixmap->getWidth(), pixmap->getHeight(), ((CMfcPixmap*)pixmap)->bitmap->GetDC(), 0, 0, SRCCOPY);
 }
 
+
+void	CMfcGraphics::drawText(int x, int y, int color,CString str)
+{
+	CPen	pen(PS_SOLID, 1, color);
+	CPen	*oldPen= canvas->SelectObject(&pen);
+	canvas->TextOutA(x,y,str);
+	canvas->SelectObject(oldPen);
+}
+
 void*	CMfcGraphics::getCanvas()
 {
 	return canvas;

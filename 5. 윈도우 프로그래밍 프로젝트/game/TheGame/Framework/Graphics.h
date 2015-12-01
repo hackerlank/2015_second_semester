@@ -21,5 +21,5 @@ public:
 	virtual	int		getWidth()=0;
 	virtual	int		getHeight()=0;
 	virtual	void*	getCanvas()=0;
-
+	virtual void	drawText(int x, int y, int color,CString str)=0;
 };

@@ -27,11 +27,13 @@ void	CMainMenuScreen::update(int deltaTime)
 	int	w, h;
 	game->getSize(w, h);
 	int	len= mouseEvents.size();
-	for(int i=0;i<len;i++){
+
+	for(int i=0 ; i<len ; i++){
 		CMouseEvent	*event= mouseEvents[i];
-		if(event->type == CMouseEvent::MOUSE_UP){
-			CRect	r(0, h-64, 64, h);
-			if(r.PtInRect(CPoint(event->x, event->y))){
+		if(event->type == CMouseEvent::MOUSE_UP) {
+
+			CRect	r(0, h+64, 64, h);
+			if(r.PtInRect(CPoint(event->x, event->y))) {
 				::MessageBoxA(NULL, "touchec", "xxx", MB_OK);
 				return;
 			}

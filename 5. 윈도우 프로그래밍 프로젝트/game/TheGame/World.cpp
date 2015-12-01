@@ -47,17 +47,13 @@ void	CWorld::placeStain()
 
 	stain->Set(x, y, rand()%3);
 }
-void CWorld::bubblesort(){
-	 int i, j, temp;
-	 for (i = 0; i < (5 - 1); ++i)
-	 {
-		 for (j = 0; j < 5 - 1 - i; ++j )
-		 {
-			 if (CSettings::highscores[j] < CSettings::highscores[j+1])
-			 {
-				 temp = CSettings::highscores[j+1];
+void CWorld::bubblesort() {
+	 for (int i=0 ; i<4; ++i) {
+		 for (int j=0 ; j<(4-i) ; ++j) {
+			 if (CSettings::highscores[j] < CSettings::highscores[j+1]) {
+				 tmp = CSettings::highscores[j+1];
 				 CSettings::highscores[j+1] = CSettings::highscores[j];
-				 CSettings::highscores[j] = temp;
+				 CSettings::highscores[j] = tmp;
 			 }
 		 }
 	 }
