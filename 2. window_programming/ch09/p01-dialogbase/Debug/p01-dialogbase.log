@@ -1,14 +1,36 @@
-﻿빌드 시작: 2015-11-24 오후 3:37:21
-     1>2 노드의 "D:\1091055\window_programming\p01-dialog1\p01-dialogbase\p01-dialogbase.vcxproj" 프로젝트(build 대상)입니다.
+﻿빌드 시작: 2015-12-08 오후 12:53:15
+     1>2 노드의 "C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\p01-dialogbase\p01-dialogbase.vcxproj" 프로젝트(build 대상)입니다.
      1>InitializeBuildStatus:
-         "AlwaysCreate"이(가) 지정되었기 때문에 "Debug\p01-dialogbase.unsuccessfulbuild"을(를) 만들고 있습니다.
+         "Debug\p01-dialogbase.unsuccessfulbuild"에 연결(touching)하고 있습니다.
        ClCompile:
-         모든 출력이 최신 상태입니다.
-         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\p01-dialogbase.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "p01-dialogbase.cpp"
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"StdAfx.h" /Fp"Debug\p01-dialogbase.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\p01-dialogbase.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "p01-dialogbase.cpp" "p01-dialogbaseDlg.cpp"
+         p01-dialogbaseDlg.cpp
          p01-dialogbase.cpp
-     1>d:\1091055\window_programming\p01-dialog1\p01-dialogbase\p01-dialogbase.cpp(78): error C2660: 'MessageBoxA' : 함수는 2개의 매개 변수를 사용하지 않습니다.
-     1>"D:\1091055\window_programming\p01-dialog1\p01-dialogbase\p01-dialogbase.vcxproj" 프로젝트를 빌드했습니다(build 대상). - 실패
+         코드를 생성하고 있습니다...
+       ResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /D _DEBUG /D _AFXDLL /l"0x0412" /IDebug\ /nologo /fo"Debug\p01-dialogbase.res" p01-dialogbase.rc 
+       ManifestResourceCompile:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\p01-dialogbase.exe.embed.manifest.res" Debug\p01-dialogbase_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\Debug\p01-dialogbase.exe" /INCREMENTAL /NOLOGO /MANIFEST /ManifestFile:"Debug\p01-dialogbase.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\Debug\p01-dialogbase.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\Debug\p01-dialogbase.lib" /MACHINE:X86 "Debug\p01-dialogbase.res"
+         "Debug\p01-dialogbase.exe.embed.manifest.res"
+         "Debug\p01-dialogbase.obj"
+         "Debug\p01-dialogbaseDlg.obj"
+         Debug\stdafx.obj
+         LINK : C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\Debug\p01-dialogbase.exe을(를) 찾을 수 없거나 마지막 증분 링크에 의해 빌드되지 않았습니다. 전체 링크를 수행하고 있습니다.
+       Manifest:
+         c:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\p01-dialogbase.exe.embed.manifest" /manifest "Debug\p01-dialogbase.exe.intermediate.manifest" "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\Include\Manifest\dpiaware.manifest"
+         모든 출력이 최신 상태입니다.
+       LinkEmbedManifest:
+         모든 출력이 최신 상태입니다.
+         p01-dialogbase.vcxproj -> C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\Debug\p01-dialogbase.exe
+       FinalizeBuildStatus:
+         "Debug\p01-dialogbase.unsuccessfulbuild" 파일을 삭제하고 있습니다.
+         "Debug\p01-dialogbase.lastbuildstate"에 연결(touching)하고 있습니다.
+     1>"C:\Users\multimedia\Documents\GitHub\2015_second_semester\2. window_programming\ch09\p01-dialogbase\p01-dialogbase.vcxproj" 프로젝트를 빌드했습니다(build 대상).
 
-빌드하지 못했습니다.
+빌드했습니다.
 
-경과 시간: 00:00:00.12
+경과 시간: 00:00:04.36

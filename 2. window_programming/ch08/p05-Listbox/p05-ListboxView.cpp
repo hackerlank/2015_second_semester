@@ -64,7 +64,11 @@ void Cp05ListboxView::OnInitialUpdate()
 	ResizeParentToFit();
 
 	//list1에 string값 추가해주기.
-	list1.AddString("김사장"); list1.AddString("박사장"); list1.AddString("임사장"); list1.AddString("차사장"); list1.AddString("공사장");
+	list1.AddString("김사장"); 
+	list1.AddString("박사장"); 
+	list1.AddString("임사장"); 
+	list1.AddString("차사장"); 
+	list1.AddString("공사장");
 	list1.SetCurSel(3);
 
 
@@ -118,7 +122,7 @@ void Cp05ListboxView::OnBnClickedButton1()
 		list2.AddString(str);
 		if(list1.GetCurSel() == 0) {
 
-		} else if(list1.GetCurSel() == 1)
+		} else if(list1.GetCurSel() <= 1)
 			list1.SetCurSel(list1.GetCurSel()+1);
 		
 	}

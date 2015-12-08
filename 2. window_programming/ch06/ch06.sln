@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p03-Selectcolor", "p03-Sele
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p08_showcursorPos", "p08_showcursorPos\p08_showcursorPos.vcxproj", "{CCC35551-19EF-4B2C-AFA2-BDC3CEAA0338}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "p08-showcursorPos", "p08-showcursorPos\p08-showcursorPos.vcxproj", "{4FC67451-D0A1-4E95-977D-3F703CBDB88B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -31,6 +33,10 @@ Global
 		{CCC35551-19EF-4B2C-AFA2-BDC3CEAA0338}.Debug|Win32.Build.0 = Debug|Win32
 		{CCC35551-19EF-4B2C-AFA2-BDC3CEAA0338}.Release|Win32.ActiveCfg = Release|Win32
 		{CCC35551-19EF-4B2C-AFA2-BDC3CEAA0338}.Release|Win32.Build.0 = Release|Win32
+		{4FC67451-D0A1-4E95-977D-3F703CBDB88B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{4FC67451-D0A1-4E95-977D-3F703CBDB88B}.Debug|Win32.Build.0 = Debug|Win32
+		{4FC67451-D0A1-4E95-977D-3F703CBDB88B}.Release|Win32.ActiveCfg = Release|Win32
+		{4FC67451-D0A1-4E95-977D-3F703CBDB88B}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

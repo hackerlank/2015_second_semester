@@ -153,6 +153,7 @@ void Cp04editView::OnEditPaste() { edit.Paste(); }
 void Cp04editView::OnEditPpaste() {
 	//MessageBox("따블카피를 했습니다","DDoubleCopy");
 	edit.Paste(); edit.Paste();
+
 }
 
 

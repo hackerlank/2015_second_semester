@@ -137,6 +137,8 @@ Cp02dialog2Doc* Cp02dialog2View::GetDocument() const // 디버그되지 않은 버전은 �
 
 void Cp02dialog2View::OnLButtonDown(UINT nFlags, CPoint point)
 {	
+
+	//button.create("dfdf"
 	CMyDialog dlg;
 	
 	//dlg.edit.SetWindowTextA(mystr); //->이 코드를 쓰면 dlg가 생성된뒤 다시 파괴
